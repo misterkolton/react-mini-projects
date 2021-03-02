@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn how to code you pants 
+          Learn how to do mini projects
         </a>
       </header>
     </div>
