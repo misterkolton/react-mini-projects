@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import Input from "./input"
+
 
 export function Toggle () {
     const [ isToggled, setIsToggled] = useState(false)
@@ -9,7 +9,10 @@ export function Toggle () {
         <div className="profile-image">
             { isToggled && 
             <img onClick={ () => setIsToggled(!isToggled)}  src="https://picsum.photos/id/983/700" alt=""/>            
-            }        
+            } 
+            { isToggled && 
+            <p>Click image to colapse.</p>            
+            }          
             {/* { isToggled &&
             PHOTO_API
             } */}
@@ -17,9 +20,9 @@ export function Toggle () {
             <img onClick={ () => setIsToggled(!isToggled)}  src="https://picsum.photos/id/983/200" alt=""/>
             }
             { !isToggled &&
-            <p>Click Image to expand</p>
+            <p>Click image to expand</p>
             }
-           
+          
             
         
         </div>

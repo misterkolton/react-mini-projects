@@ -1,17 +1,26 @@
 import React, { useState } from "react"
 
 export function Input() {
+    const [comment, setComment] = useState("");
 
-    const [ inputValue, setinputValue ] = useState("")
-    
     return (
-        <div>
-            {inputValue &&
-            <h3>{inputValue}</h3>
-            }
+        <div className="user-comment"> 
+        <h2>{comment}</h2>
+        <form>
+            <input placeholder="leave a comment..." ></input>
+            <button onClick={() => setComment()}></button>
 
-        <input value={inputValue} 
-        onChange={ (e) => setinputValue(e.target.value)  } />
+
+
+
+
+        </form>
+        
+        
+        
+        
         </div>
-          )
+    );
+
+
 }
