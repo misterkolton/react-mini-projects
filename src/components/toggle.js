@@ -1,10 +1,7 @@
-import React, {useState} from "react"
+import React from "react"
 
 
-export function Toggle () {
-    const [ isToggled, setIsToggled] = useState(false)
-    const PHOTO_API = "https://picsum.photos/id/983/info"
-    console.log(PHOTO_API)
+const Toggle = ({ isToggled, setIsToggled}) => {
     return (
         <div className="profile-image">
             { isToggled && 
@@ -28,3 +25,5 @@ export function Toggle () {
         </div>
     )
 }
+
+export default Toggle;
