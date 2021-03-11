@@ -3,7 +3,9 @@ import React from "react";
 const Comment = ({ text, comment, comments, setComments }) => {
 
     const deleteHandler = () => {
-        setComments(comments.filter((element) => element.id !== comment.id));        
+        // setComments(comments.filter((element) => element.id !== comment.id));        
+       
+        console.log(comments)
     };
     return(
         <div className="comment">

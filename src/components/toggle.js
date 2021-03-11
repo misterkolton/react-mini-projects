@@ -8,7 +8,7 @@ const Toggle = ({ isToggled, setIsToggled}) => {
             <img onClick={ () => setIsToggled(!isToggled)}  src="https://picsum.photos/id/983/700" alt=""/>            
             } 
             { isToggled && 
-            <p>Click image to colapse.</p>            
+            <p>Click image to turn into annie.</p>            
             }          
             {/* { isToggled &&
             PHOTO_API
