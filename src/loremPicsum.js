@@ -1,22 +1,9 @@
-import Axios from "axios";
+// import Axios from "axios";
 
 
-const GetPicsum = () => {
-    Axios.get("https://picsum.photos/v2/list?page=2&limit=100").then(
-        (response) => {
-            console.log(response);
-
-        }
-    );
-};
-return (
-    <div>
-        <button onClick={GetPicsum}></button>
-    </div>
-)
-
-export default GetPicsum
-
+// const GetPicsum = () => {
+//     Axios.get("https://picsum.photos/v2/list?page=2&limit=100").then(
+//         (response) 
 
 
 
